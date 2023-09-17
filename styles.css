@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+
+}
+
+.header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform-style: preserve-3d;  
+    /* 3d wala style hatana nahi hai */
+    z-index: -1;
+
+}
+
+.background, .foreground{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+.toptext{
+    position: absolute;
+    top: 20%;
+    color: white;
+    font-size: 50rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 10px 10px 3px black;
+    letter-spacing: 20px;
+}
+
+.text{
+    padding: 3% 10% 3%;
+    background-color: rgb(45, 45, 45);
+    font-size: 8rem;
+    color: white;
+    text-shadow: 1 1 1 black;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    
+    background-size: cover;
+
+
+    height: 60vh;
+
+}
+.desc{
+    position: absolute;
+    top:20%;
+    left:35%;
+    color: black;
+    background-color: white;
+    
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 10px black;
+    font-size: 15rem;
+
+    
+}
+
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+
+.bg3{
+    background-image: url(sport-3.jpg);
+}
